@@ -1,0 +1,273 @@
+import type { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'baggystudio.com';
+
+  return [
+    {
+      url: `${baseUrl}`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/booking`,
+      lastModified: new Date(),
+      changeFrequency: 'always',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/font/Satoshi-Variable.ttf`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/font/AlbertSans-VariableFont.ttf`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+
+    {
+      url: `${baseUrl}/Approach/icon 01.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Approach/icon 02.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Approach/icon 03.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Approach/icon 04.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Approach/icon 05.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Benefit/icon 01.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Benefit/icon 02.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Benefit/icon 03.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Benefit/icon 04.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Logo/Logo Dark.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Logo/Logo Light.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/cloud.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Contra Logo.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Figma Logo Custom.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Figma Logo.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/hierarchy-2.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/message-programming.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/star.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/sun.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/SVG.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Card/icon 01.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Card/icon 02.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Card/icon 03.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Card/icon 04.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Pricing/Card/icon 05.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/contra.png`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/contra.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Error 404 creature.json`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/favicon-baggystudio.png`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/file.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Footer Logo.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/globe.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/icon graphix star.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Logo Contra Dark.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/Logo Contra Light.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/logo-tulungagung-dev.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/partner-1.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/partner-2.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/partner-3.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/window.svg`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+  ];
+}

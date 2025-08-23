@@ -1,0 +1,28 @@
+{
+  "LocaleSwitcher": {
+    "id": "Indonesian",
+    "en": "English",
+    "label": "EN"
+  },
+  "formLead": {
+    "validator": {
+      "name": {
+        "required": "Name is required",
+        "minString": "Name must be at least 2 characters",
+        "maxString": "Name cannot be more than 255 characters",
+        "invalid": "Name can only contain letters and spaces"
+      },
+      "email": {
+        "required": "Email is required",
+        "invalid": "Invalid email format"
+      },
+      "noWhatapps": {
+        "required": "WhatsApp number is required",
+        "invalid": "Invalid WhatsApp number format (e.g., +14155552671)"
+      },
+      "message": {
+        "maxString": "Message cannot be more than 1000 characters"
+      }
+    }
+  }
+}

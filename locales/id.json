@@ -1,0 +1,28 @@
+{
+  "LocaleSwitcher": {
+    "id": "Indonesian",
+    "en": "English",
+    "label": "ID"
+  },
+  "formLead": {
+    "validator": {
+      "name": {
+        "required": "Nama wajib diisi",
+        "minString": "Nama harus memiliki setidaknya 2 karakter",
+        "maxString": "Nama tidak boleh lebih dari 255 karakter",
+        "invalid": "Nama hanya boleh berisi huruf dan spasi"
+      },
+      "email": {
+        "required": "Email wajib diisi",
+        "invalid": "Format email tidak valid"
+      },
+      "noWhatapps": {
+        "required": "Nomor WhatsApp wajib diisi",
+        "invalid": "Format nomor WhatsApp tidak valid (contoh: +628123456789)"
+      },
+      "message": {
+        "maxString": "Pesan tidak boleh lebih dari 1000 karakter"
+      }
+    }
+  }
+}
