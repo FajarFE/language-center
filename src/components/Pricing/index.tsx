@@ -116,7 +116,7 @@ const Pricing = () => {
             </label>
             <div className="relative bg-gray-200/80 dark:bg-slate-800 rounded-full p-1 flex mt-2">
               <motion.div
-                className="absolute top-1 left-1 h-[calc(100%-0.5rem)] w-1/2 bg-primary rounded-full"
+                className="absolute top-1 left-1 h-[calc(100%-0.5rem)] w-[48%] bg-primary rounded-full"
                 layoutId="switcher-bg"
                 initial={false}
                 animate={{ x: paymentType === 'lunasan' ? '0%' : '100%' }}
