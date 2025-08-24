@@ -112,7 +112,7 @@ export async function generateMetadata(): Promise<Metadata> {
       'msapplication-TileColor': '#0056b3',
     },
     verification: {
-      google: '#',
+      google: 'oMuhV9DyiqqhFfeQxEuD1erXA9y2MpvMC6O_C15_WvE',
     },
   };
 }
