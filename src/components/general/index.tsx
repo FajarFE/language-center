@@ -12,9 +12,9 @@ export const LayoutMain = ({ children }: { children: React.ReactNode }) => {
     title: t('brand'),
     image: '/favicon.ico',
     links: [
-      { href: '/about', label: t('about') },
-      { href: '/courses', label: t('courses') },
-      { href: '/contact', label: t('contact') },
+      { href: '#', label: t('about') },
+      { href: '#', label: t('courses') },
+      { href: '#', label: t('contact') },
     ],
   };
 
@@ -22,9 +22,9 @@ export const LayoutMain = ({ children }: { children: React.ReactNode }) => {
     image: '/favicon.ico',
     socialMedia: [
       { icon: Facebook, href: 'https://facebook.com' },
-      { icon: Linkedin, href: 'tel:+1234567890' },
+      { icon: Linkedin, href: 'https://facebook.com' },
       { icon: Instagram, href: 'https://facebook.com' },
-      { icon: Youtube, href: 'tel:+1234567890' },
+      { icon: Youtube, href: 'https://facebook.com' },
       { icon: XIcon, href: 'https://x.com' },
     ],
     numberHp: 1234567890,
@@ -32,27 +32,27 @@ export const LayoutMain = ({ children }: { children: React.ReactNode }) => {
       {
         title: 'About',
         link: [
-          { href: '/privacy', label: 'Company Profile' },
-          { href: '/terms', label: 'Carrers' },
-          { href: '/terms', label: 'Contact Us' },
-          { href: '/terms', label: 'Privacy Policy' },
+          { href: '#', label: 'Company Profile' },
+          { href: '#', label: 'Carrers' },
+          { href: '#', label: 'Contact Us' },
+          { href: '#', label: 'Privacy Policy' },
         ],
       },
       {
         title: 'Learning With Us',
         link: [
-          { href: '/privacy', label: 'Learning Methods' },
-          { href: '/terms', label: 'Expert Tutors' },
-          { href: '/terms', label: 'Certified Programs' },
-          { href: '/terms', label: 'Corporate Training' },
+          { href: '#', label: 'Learning Methods' },
+          { href: '#', label: 'Expert Tutors' },
+          { href: '#', label: 'Certified Programs' },
+          { href: '#', label: 'Corporate Training' },
         ],
       },
       {
         title: 'Discover',
         link: [
-          { href: '/privacy', label: 'Blogs Articles' },
-          { href: '/terms', label: 'English Test' },
-          { href: '/terms', label: 'Support Center' },
+          { href: '#', label: 'Blogs Articles' },
+          { href: '#', label: 'English Test' },
+          { href: '#', label: 'Support Center' },
         ],
       },
     ],

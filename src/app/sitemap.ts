@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/${file}`,
     lastModified: new Date(),
     changeFrequency: 'yearly',
-    priority: 0.3,
+    priority: 1.0,
   }));
 
   return [...pages, ...assets];

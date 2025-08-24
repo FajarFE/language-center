@@ -59,7 +59,7 @@ export const HeroSection = () => {
             text={isMobile ? t('titleMobile') : t.raw('title')}
           />
           <div className="w-full flex mt-10  justify-between items-center  relative">
-            <div className=" bg-[#9242FD] justify-between h-[200px] py-4 flex flex-col pl-6  pr-20 rounded-4xl relative ">
+            <div className=" bg-primary justify-between h-[200px] py-4 flex flex-col pl-6  pr-20 rounded-4xl relative ">
               <div className="flex text-accent font-bricolage text-[58px] flex-row">
                 <span>+</span>
                 <CountUp to={18} />
@@ -76,7 +76,7 @@ export const HeroSection = () => {
                     index % 2 === 0
                       ? 'left-12     rotate-[25rad]'
                       : 'right-0 -rotate-[25rad]'
-                  } px-4 py-2 rounded-full text-white bg-[#D3E712] font-semibold absolute cursor-pointer hover:scale-105 transition-transform duration-300`}
+                  } px-4 py-2 rounded-full text-primary bg-accent font-semibold absolute cursor-pointer hover:scale-105 transition-transform duration-300`}
                   style={{
                     bottom: `${-80 - index * 50}px`,
                   }}
@@ -97,7 +97,7 @@ export const HeroSection = () => {
                 dangerouslySetInnerHTML={{ __html: t.raw('unlock') }}
               ></p>
               <Link
-                href="/your-link"
+                href="#"
                 className="text-white w-full flex justify-center items-center bg-primary rounded-full py-3 px-5 font-semibold"
               >
                 {t('getStarted')}

@@ -6,6 +6,7 @@ import { getLocale, getMessages } from 'next-intl/server'; // <-- Impor fungsi s
 import { NextIntlClientProvider } from 'next-intl';
 import TargetCursor from '@/components/TargetCursor/TargetCursor';
 import { ToastContainer } from 'react-toastify';
+import Head from 'next/head';
 
 const geistSans = Urbanist({
   variable: '--font-urbanist-sans',
@@ -87,7 +88,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: ogDescription,
       images: [
         {
-          url: '/favicon.ico',
+          url: '/pop-up-EM-EMP-1.webp',
           width: 1200,
           height: 630,
           alt: isID
@@ -126,6 +127,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <Head>
+        <meta
+          name="description"
+          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${bricolageGrotesque.variable} antialiased`}
       >

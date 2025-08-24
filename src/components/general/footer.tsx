@@ -68,9 +68,9 @@ export const FooterLayout = ({
             © {new Date().getFullYear()} Learning Center All right reserved
           </p>
           <div className="text-white text-sm gap-8 flex">
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/term-and-conditions">Term & Conditions</Link>
-            <Link href="/faq">FAQ</Link>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Term & Conditions</Link>
+            <Link href="#">FAQ</Link>
           </div>
         </div>
       </footer>
