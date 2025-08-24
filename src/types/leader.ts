@@ -4,7 +4,7 @@ import * as z from 'zod';
 const nameRegex = /^[a-zA-Z\u00C0-\u017F\s'-]+$/;
 const phoneRegex = /^\+?[1-9]\d{7,14}$/;
 
-export const getLeadSchema = (t: ReturnType<typeof useTranslations>) =>
+export const createLead = (t: ReturnType<typeof useTranslations>) =>
   z.object({
     name: z
       .string()
@@ -14,12 +14,6 @@ export const getLeadSchema = (t: ReturnType<typeof useTranslations>) =>
       .regex(nameRegex, {
         message: t('validator.name.invalid'),
       }),
-
-    email: z
-      .string()
-      .nonempty({ message: t('validator.email.required') })
-      .email({ message: t('validator.email.invalid') }),
-
     noWhatapps: z
       .string()
       .nonempty({ message: t('validator.noWhatapps.required') })
@@ -28,5 +22,5 @@ export const getLeadSchema = (t: ReturnType<typeof useTranslations>) =>
       }),
   });
 
-type LeadSchemaType = ReturnType<typeof getLeadSchema>;
+type LeadSchemaType = ReturnType<typeof createLead>;
 export type Lead = z.infer<LeadSchemaType>;

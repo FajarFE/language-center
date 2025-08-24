@@ -166,5 +166,91 @@
         "maxString": "Message cannot be more than 1000 characters"
       }
     }
+  },
+  "testimonials": {
+    "title": "What Our Alumni Are <br/> Saying",
+    "subtitle": "Our English programs have transformed careers and opened up a world of opportunities for our alumni.",
+    "trusted": "Trusted by learners worldwide",
+    "aria": {
+      "name": "Aria Chen",
+      "title": "Software Engineer",
+      "quote": "This course gave me the confidence to ace my interviews in English. I landed my dream job at a multinational company!"
+    },
+    "ben": {
+      "name": "Ben Carter",
+      "title": "University Student",
+      "quote": "Thanks to the IELTS prep course, I exceeded my target score and got accepted into my first-choice university abroad."
+    },
+    "carla": {
+      "name": "Carla Rodriguez",
+      "title": "Travel Blogger",
+      "quote": "My conversational skills improved dramatically. I can now travel the world and connect with people from different cultures."
+    },
+    "david": {
+      "name": "David Lee",
+      "title": "Graphic Designer",
+      "quote": "The learning environment is so supportive and fun. The tutors make grammar easy to understand and practice."
+    },
+    "eva": {
+      "name": "Eva Williams",
+      "title": "Marketing Manager",
+      "quote": "I can finally lead international meetings with confidence. This program was a game-changer for my career."
+    }
+  },
+  "chromaGrid": {
+    "alex": {
+      "title": "Dr. Alex Rivera",
+      "subtitle": "IELTS & TOEFL Specialist",
+      "experience": "10+ Years of Exam Coaching",
+      "location": "Online"
+    },
+    "jordan": {
+      "title": "Jordan Chen",
+      "subtitle": "Business English Coach",
+      "experience": "8 Years in Corporate Training",
+      "location": "Jakarta"
+    },
+    "morgan": {
+      "title": "Morgan Blake",
+      "subtitle": "Conversational English Expert",
+      "experience": "Certified TESOL Instructor",
+      "location": "Bandung"
+    },
+    "casey": {
+      "title": "Casey Park",
+      "subtitle": "Pronunciation Specialist",
+      "experience": "MA in Applied Linguistics",
+      "location": "Online"
+    },
+    "sam": {
+      "title": "Sam Kim",
+      "subtitle": "Grammar & Writing Instructor",
+      "experience": "Former University Lecturer",
+      "location": "Surabaya"
+    },
+    "tyler": {
+      "title": "Tyler Rodriguez",
+      "subtitle": "General English Tutor",
+      "experience": "5 Years of Teaching Beginners",
+      "location": "Global"
+    }
+  },
+
+  "serverAction": {
+    "success": {
+      "create": "{subject} has been successfully created.",
+      "update": "{subject} has been successfully updated.",
+      "delete": "{subject} has been successfully deleted.",
+      "generic": "Action completed successfully."
+    },
+    "error": {
+      "create": "Failed to create {subject}. Please try again.",
+      "update": "Failed to update {subject}. Please try again.",
+      "delete": "Failed to delete {subject}. Please try again.",
+      "notFound": "{subject} not found.",
+      "duplicate": "{field} {value} already exists. Please use a different one.",
+      "unauthorized": "You are not authorized to perform this action.",
+      "generic": "An unexpected error occurred. Please try again later."
+    }
   }
 }

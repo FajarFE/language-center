@@ -166,5 +166,90 @@
         "maxString": "Pesan tidak boleh lebih dari 1000 karakter"
       }
     }
+  },
+  "testimonials": {
+    "title": "Apa Kata Alumni <br/> Kami ",
+    "subtitle": "Program bahasa Inggris kami telah mengubah karier dan membuka dunia peluang bagi para alumni kami.",
+    "trusted": "Dipercaya oleh pelajar di seluruh dunia",
+    "aria": {
+      "name": "Aria Chen",
+      "title": "Insinyur Perangkat Lunak",
+      "quote": "Kursus ini memberi saya kepercayaan diri untuk berhasil dalam wawancara berbahasa Inggris. Saya mendapatkan pekerjaan impian saya di sebuah perusahaan multinasional!"
+    },
+    "ben": {
+      "name": "Ben Carter",
+      "title": "Mahasiswa",
+      "quote": "Berkat kursus persiapan IELTS, saya berhasil melampaui target skor saya dan diterima di universitas pilihan pertama saya di luar negeri."
+    },
+    "carla": {
+      "name": "Carla Rodriguez",
+      "title": "Travel Blogger",
+      "quote": "Keterampilan percakapan saya meningkat drastis. Sekarang saya bisa berkeliling dunia dan terhubung dengan orang-orang dari berbagai budaya."
+    },
+    "david": {
+      "name": "David Lee",
+      "title": "Desainer Grafis",
+      "quote": "Lingkungan belajarnya sangat mendukung dan menyenangkan. Para tutor membuat tata bahasa menjadi mudah dipahami dan dipraktikkan."
+    },
+    "eva": {
+      "name": "Eva Williams",
+      "title": "Manajer Pemasaran",
+      "quote": "Saya akhirnya bisa memimpin rapat internasional dengan percaya diri. Program ini benar-benar mengubah karier saya."
+    }
+  },
+  "chromaGrid": {
+    "alex": {
+      "title": "Dr. Alex Rivera",
+      "subtitle": "Spesialis IELTS & TOEFL",
+      "experience": "10+ Tahun Pelatihan Ujian",
+      "location": "Online"
+    },
+    "jordan": {
+      "title": "Jordan Chen",
+      "subtitle": "Pelatih Bahasa Inggris Bisnis",
+      "experience": "8 Tahun Pelatihan Korporat",
+      "location": "Jakarta"
+    },
+    "morgan": {
+      "title": "Morgan Blake",
+      "subtitle": "Pakar Bahasa Inggris Percakapan",
+      "experience": "Instruktur TESOL Bersertifikat",
+      "location": "Bandung"
+    },
+    "casey": {
+      "title": "Casey Park",
+      "subtitle": "Spesialis Pelafalan",
+      "experience": "MA dalam Linguistik Terapan",
+      "location": "Online"
+    },
+    "sam": {
+      "title": "Sam Kim",
+      "subtitle": "Instruktur Tata Bahasa & Menulis",
+      "experience": "Mantan Dosen Universitas",
+      "location": "Surabaya"
+    },
+    "tyler": {
+      "title": "Tyler Rodriguez",
+      "subtitle": "Tutor Bahasa Inggris Umum",
+      "experience": "5 Tahun Mengajar Pemula",
+      "location": "Global"
+    }
+  },
+  "serverAction": {
+    "success": {
+      "create": "{subject} telah sukses dibuat.",
+      "update": "{subject} telah berhasil diperbarui.",
+      "delete": "{subject} telah berhasil dihapus.",
+      "generic": "Tindakan berhasil diselesaikan."
+    },
+    "error": {
+      "create": "Gagal membuat {subject}. Silakan coba lagi.",
+      "update": "Gagal memperbarui {subject}. Silakan coba lagi.",
+      "delete": "Gagal menghapus {subject}. Silakan coba lagi.",
+      "notFound": "{subject} tidak ditemukan.",
+      "duplicate": "{field} {value} telah digunakan. Silakan gunakan yang berbeda.",
+      "unauthorized": "Anda tidak memiliki izin untuk melakukan tindakan ini.",
+      "generic": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi nanti."
+    }
   }
 }

@@ -81,7 +81,11 @@ function LocaleSwitcherSelect({ defaultValue, items, label, theme }: Props) {
             </span>
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="w-32">
+        <DropdownMenuContent
+          style={{ zIndex: 100 }}
+          align="end"
+          className="w-32 z-50"
+        >
           {items.map((lang) => (
             <DropdownMenuItem
               key={lang.value}

@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 // ... (Interface ChromaItem dan ChromaCarouselProps tetap sama) ...
 
@@ -37,14 +38,15 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
   const rootRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<HTMLElement[]>([]);
+  const t = useTranslations('chromaGrid');
 
   const demo: ChromaItem[] = [
     {
       image: 'https://i.pravatar.cc/300?img=8',
-      title: 'Alex Rivera',
-      subtitle: 'Full Stack Development',
-      experience: '7 Tahun di Microsoft',
-      location: 'Online',
+      title: t('alex.title'),
+      subtitle: t('alex.subtitle'),
+      experience: t('alex.experience'),
+      location: t('alex.location'),
       handle: '@alexrivera',
       borderColor: '#4F46E5',
       gradient: 'linear-gradient(145deg,#4F46E5,#000)',
@@ -52,10 +54,10 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
     },
     {
       image: 'https://i.pravatar.cc/300?img=11',
-      title: 'Jordan Chen',
-      subtitle: 'DevOps & Cloud Computing',
-      experience: '5 Tahun di Amazon Web Services',
-      location: 'Jakarta',
+      title: t('jordan.title'),
+      subtitle: t('jordan.subtitle'),
+      experience: t('jordan.experience'),
+      location: t('jordan.location'),
       handle: '@jordanchen',
       borderColor: '#10B981',
       gradient: 'linear-gradient(210deg,#10B981,#000)',
@@ -63,10 +65,10 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
     },
     {
       image: 'https://i.pravatar.cc/300?img=3',
-      title: 'Morgan Blake',
-      subtitle: 'UI/UX Design Principles',
-      experience: '6 Tahun di IDEO',
-      location: 'Bandung',
+      title: t('morgan.title'),
+      subtitle: t('morgan.subtitle'),
+      experience: t('morgan.experience'),
+      location: t('morgan.location'),
       handle: '@morganblake',
       borderColor: '#F59E0B',
       gradient: 'linear-gradient(165deg,#F59E0B,#000)',
@@ -74,10 +76,10 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
     },
     {
       image: 'https://i.pravatar.cc/300?img=16',
-      title: 'Casey Park',
-      subtitle: 'Data Science & Machine Learning',
-      experience: '4 Tahun di Google',
-      location: 'Online',
+      title: t('casey.title'),
+      subtitle: t('casey.subtitle'),
+      experience: t('casey.experience'),
+      location: t('casey.location'),
       handle: '@caseypark',
       borderColor: '#EF4444',
       gradient: 'linear-gradient(195deg,#EF4444,#000)',
@@ -85,10 +87,10 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
     },
     {
       image: 'https://i.pravatar.cc/300?img=25',
-      title: 'Sam Kim',
-      subtitle: 'Mobile App Development (iOS)',
-      experience: '8 Tahun di Apple',
-      location: 'Surabaya',
+      title: t('sam.title'),
+      subtitle: t('sam.subtitle'),
+      experience: t('sam.experience'),
+      location: t('sam.location'),
       handle: '@thesamkim',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg,#8B5CF6,#000)',
@@ -96,10 +98,10 @@ const ChromaCarousel: React.FC<ChromaCarouselProps> = ({
     },
     {
       image: 'https://i.pravatar.cc/300?img=60',
-      title: 'Tyler Rodriguez',
-      subtitle: 'Cloud Architecture',
-      experience: '10 Tahun Pengalaman Industri',
-      location: 'Global',
+      title: t('tyler.title'),
+      subtitle: t('tyler.subtitle'),
+      experience: t('tyler.experience'),
+      location: t('tyler.location'),
       handle: '@tylerrod',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg,#06B6D4,#000)',

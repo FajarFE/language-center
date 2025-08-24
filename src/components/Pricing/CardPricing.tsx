@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/libs/utils';
 import { ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '../ui/button';
@@ -29,7 +29,6 @@ const CardPricing = ({
   description,
   features,
   buttonText,
-  isPopular = false,
   className,
 }: CardPricingProps) => {
   const [isHovered, setIsHovered] = useState(false);

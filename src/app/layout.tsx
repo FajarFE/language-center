@@ -5,6 +5,7 @@ import { LayoutMain } from '@/components/general';
 import { getLocale, getMessages } from 'next-intl/server'; // <-- Impor fungsi server
 import { NextIntlClientProvider } from 'next-intl';
 import TargetCursor from '@/components/TargetCursor/TargetCursor';
+import { ToastContainer } from 'react-toastify';
 
 const geistSans = Urbanist({
   variable: '--font-urbanist-sans',
@@ -129,6 +130,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${bricolageGrotesque.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <ToastContainer />
           <TargetCursor spinDuration={2} hideDefaultCursor={true} />
           <LayoutMain>{children}</LayoutMain>
         </NextIntlClientProvider>

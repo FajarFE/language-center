@@ -22,16 +22,14 @@ export const Discount = () => {
         width={700}
         height={700}
         priority
-        className="absolute -left-[200px] -bottom-20 z-20 pointer-events-none" // <-- TAMBAHKAN INI
+        className="absolute -left-[200px] -bottom-20 z-20 pointer-events-none"
       />
-      <div
-        className="h-full flex-col gap-5 pl-[300px] w-full flex absolute items-start justify-center z-30 pointer-events-none" // <-- DAN TAMBAHKAN INI
-      >
-        <h1 className="text-white text-[78px] font-bricolage  text-center px-5">
+      <div className="h-full flex-col gap-5 pl-[320px] w-full flex absolute items-start justify-center z-30 pointer-events-none">
+        <h1 className="text-white -mb-8 text-[78px] font-bricolage  text-center ">
           {t('title')}
         </h1>
-        <p>{t('subtitle')}</p>
-        <button className="bg-blue-500 pointer-events-auto inset-1 text-white py-2 px-4 rounded">
+        <p className=" text-white text-[28px]">{t('subtitle')}</p>
+        <button className="bg-accent rounded-full text-primary pointer-events-auto cursor-target inset-1  py-2 px-4 ">
           {t('claim')}
         </button>
       </div>

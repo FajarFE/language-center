@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavbarLayout } from './navbar';
 import { FooterLayout } from './footer';
-import { Facebook, Phone } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, XIcon, Youtube } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export const LayoutMain = ({ children }: { children: React.ReactNode }) => {
@@ -22,15 +22,37 @@ export const LayoutMain = ({ children }: { children: React.ReactNode }) => {
     image: '/favicon.ico',
     socialMedia: [
       { icon: Facebook, href: 'https://facebook.com' },
-      { icon: Phone, href: 'tel:+1234567890' },
+      { icon: Linkedin, href: 'tel:+1234567890' },
+      { icon: Instagram, href: 'https://facebook.com' },
+      { icon: Youtube, href: 'tel:+1234567890' },
+      { icon: XIcon, href: 'https://x.com' },
     ],
     numberHp: 1234567890,
     section: [
       {
-        title: 'Quick Links',
+        title: 'About',
         link: [
-          { href: '/privacy', label: 'Privacy Policy' },
-          { href: '/terms', label: 'Terms of Service' },
+          { href: '/privacy', label: 'Company Profile' },
+          { href: '/terms', label: 'Carrers' },
+          { href: '/terms', label: 'Contact Us' },
+          { href: '/terms', label: 'Privacy Policy' },
+        ],
+      },
+      {
+        title: 'Learning With Us',
+        link: [
+          { href: '/privacy', label: 'Learning Methods' },
+          { href: '/terms', label: 'Expert Tutors' },
+          { href: '/terms', label: 'Certified Programs' },
+          { href: '/terms', label: 'Corporate Training' },
+        ],
+      },
+      {
+        title: 'Discover',
+        link: [
+          { href: '/privacy', label: 'Blogs Articles' },
+          { href: '/terms', label: 'English Test' },
+          { href: '/terms', label: 'Support Center' },
         ],
       },
     ],

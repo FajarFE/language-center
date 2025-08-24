@@ -1,12 +1,12 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'baggystudio.com';
+  const baseUrl = 'https://learningenglish.com'; // Ganti dengan domain Anda
   return {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', '/booking'],
+        allow: ['/', '/lead'],
         disallow: [
           '/*.json$',
           '/*.xml$',
@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
     ],
 
     sitemap: `${baseUrl}/sitemap.xml`,
-    host: 'baggystudio.com',
+    host: baseUrl,
   };
 }
