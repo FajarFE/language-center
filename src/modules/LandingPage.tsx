@@ -12,8 +12,8 @@ export const LandingPage = () => {
       <MagicBento />
       <Discount />
       <Bennefits />
-      <Pricing />
       <Tutor />
+      <Pricing />
     </>
   );
 };

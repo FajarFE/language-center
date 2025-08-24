@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import Beams from '../Beams/Beams';
 import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslations } from 'next-intl';
 const ScrollText = dynamic(
   () =>
     import('@/components/ScrollText/ScrollText').then((mod) => mod.ScrollText),
@@ -37,44 +38,6 @@ const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
 const DEFAULT_GLOW_COLOR = '255, 255, 255';
 const MOBILE_BREAKPOINT = 768;
-const cardData: BentoCardProps[] = [
-  {
-    color: '#9242FD',
-    title: 'Skor TOEFL',
-    description: 'Strategi & praktik soal TOEFL.',
-    label: 'Skor Tinggi',
-  },
-  {
-    color: '#000000',
-    title: 'Skor IELTS',
-    description: 'Strategi & praktik soal untuk tes IELTS.',
-    label: 'Target Band 7+',
-  },
-  {
-    color: '#000000',
-    title: 'Jago TOEIC',
-    description: 'Komunikasi Inggris untuk kerja.',
-    label: 'Karir Global',
-  },
-  {
-    color: '#9242FD',
-    title: 'Public Speaking',
-    description: 'Bicara di depan umum lebih percaya diri.',
-    label: 'Percaya Diri',
-  },
-  {
-    color: '#9242FD',
-    title: 'English Lanjutan',
-    description: 'Fasih berbicara untuk karir.',
-    label: 'Makin Fasih',
-  },
-  {
-    color: '#000000',
-    title: 'Kuasai Grammar',
-    description: 'Perdalam tata bahasa Inggris.',
-    label: 'Fondasi Kuat',
-  },
-];
 
 const createParticleElement = (
   x: number,
@@ -537,24 +500,18 @@ const BentoCardGrid: React.FC<{
   children: React.ReactNode;
   gridRef?: React.RefObject<HTMLDivElement | null>;
 }> = ({ children, gridRef }) => {
+  const t = useTranslations('magicBento');
   const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
   return (
     <div className="container grid grid-cols-12 lg:mt-[400px]  h-fit relative  max-w-[1220px]  mx-auto   w-7xl">
       <div className="col-span-4 w-full">
         <ScrollText
-          text={
-            isDesktop
-              ? 'SPEAK ENGLISH CONFIDENTLY. <br/> UNLOCK GLOBAL <br/> OPPORTUNITIES.'
-              : 'SPEAK ENGLISH CONFIDENTLY. UNLOCK GLOBAL OPPORTUNITIES.'
-          }
+          text={isDesktop ? t.raw('title') : t('titleMobile')}
           animationStartOffset="start end"
           animationEndOffset="start center"
           className="text-[36px] font-bricolage leading-[35px] lg:leading-[50px] lg:text-[40px] font-medium "
         />
-        <p className="text-sm text-gray-400">
-          Temukan program yang dirancang khusus untuk membantu Anda mencapai
-          tujuan akademik dan profesional dalam bahasa Inggris.
-        </p>
+        <p className="text-sm text-gray-400">{t('description')}</p>
       </div>
       <div
         className="bento-section w-full col-span-8 grid gap-2 p-3  select-none relative"
@@ -596,9 +553,49 @@ const MagicBento: React.FC<BentoProps> = ({
   clickEffect = true,
   enableMagnetism = true,
 }) => {
+  const t = useTranslations('magicBento.cards');
   const gridRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
   const shouldDisableAnimations = disableAnimations || isMobile;
+
+  const cardData: BentoCardProps[] = [
+    {
+      color: '#9242FD',
+      title: t('toefl.title'),
+      description: t('toefl.description'),
+      label: t('toefl.label'),
+    },
+    {
+      color: '#000000',
+      title: t('ielts.title'),
+      description: t('ielts.description'),
+      label: t('ielts.label'),
+    },
+    {
+      color: '#000000',
+      title: t('toeic.title'),
+      description: t('toeic.description'),
+      label: t('toeic.label'),
+    },
+    {
+      color: '#9242FD',
+      title: t('publicSpeaking.title'),
+      description: t('publicSpeaking.description'),
+      label: t('publicSpeaking.label'),
+    },
+    {
+      color: '#9242FD',
+      title: t('advancedEnglish.title'),
+      description: t('advancedEnglish.description'),
+      label: t('advancedEnglish.label'),
+    },
+    {
+      color: '#000000',
+      title: t('grammar.title'),
+      description: t('grammar.description'),
+      label: t('grammar.label'),
+    },
+  ];
 
   return (
     <>

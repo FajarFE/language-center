@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
           '/private/',
         ],
       },
-      { userAgent: 'Googlebot', allow: '/', disallow: ['/api/', '/admin/'] },
+      { userAgent: 'Googlebot', allow: '/', disallow: ['/api/'] },
     ],
 
     sitemap: `${baseUrl}/sitemap.xml`,

@@ -4,6 +4,148 @@
     "en": "English",
     "label": "ID"
   },
+  "navbar": {
+    "brand": "Language Center",
+    "about": "Tentang Kami",
+    "courses": "Kursus",
+    "contact": "Kontak",
+    "getStarted": "Mulai"
+  },
+  "heroSection": {
+    "title": "Berbicara Bahasa Inggris dengan <br/> Percaya Diri dan Jelas",
+    "titleMobile": "Kami menciptakan desain yang indah dengan semangat untuk startup & merek terkemuka.",
+    "trusted": "Siswa Mempercayai <br /> Pusat Bahasa Kami",
+    "circularText": "* Pusat * Bahasa",
+    "unlock": "Buka peluang baru <br /> dengan pelatihan bahasa Inggris <br /> yang dipersonalisasi untuk Anda",
+    "getStarted": "Mulai",
+    "aboutUs": "Tentang Kami",
+    "onlineCourse": "Kursus Online",
+    "yearsExperience": "Tahun Pengalaman",
+    "topMentor": "Mentor Terbaik",
+    "aboutUsDescription": "English Master menawarkan program intensif yang memadukan teori kelas dengan praktik imersif. Melalui Asrama English Area dan trip praktik ke Bali, kami mengubah pengetahuan Anda menjadi kefasihan dan kepercayaan diri untuk panggung dunia.",
+    "skills": {
+      "speaking": "Keterampilan Berbicara",
+      "creative": "Pembelajaran Kreatif",
+      "writing": "Keterampilan Menulis",
+      "vocabulary": "Kosakata"
+    }
+  },
+  "magicBento": {
+    "title": "BICARA BAHASA INGGRIS DENGAN PERCAYA DIRI. <br/> BUKA PELUANG <br/> GLOBAL.",
+    "titleMobile": "BICARA BAHASA INGGRIS DENGAN PERCAYA DIRI. BUKA PELUANG GLOBAL.",
+    "description": "Temukan program yang dirancang khusus untuk membantu Anda mencapai tujuan akademik dan profesional dalam bahasa Inggris.",
+    "cards": {
+      "toefl": {
+        "title": "Skor TOEFL",
+        "description": "Strategi & praktik soal TOEFL.",
+        "label": "Skor Tinggi"
+      },
+      "ielts": {
+        "title": "Skor IELTS",
+        "description": "Strategi & praktik soal untuk tes IELTS.",
+        "label": "Target Band 7+"
+      },
+      "toeic": {
+        "title": "Jago TOEIC",
+        "description": "Komunikasi Inggris untuk kerja.",
+        "label": "Karir Global"
+      },
+      "publicSpeaking": {
+        "title": "Public Speaking",
+        "description": "Bicara di depan umum lebih percaya diri.",
+        "label": "Percaya Diri"
+      },
+      "advancedEnglish": {
+        "title": "English Lanjutan",
+        "description": "Fasih berbicara untuk karir.",
+        "label": "Makin Fasih"
+      },
+      "grammar": {
+        "title": "Kuasai Grammar",
+        "description": "Perdalam tata bahasa Inggris.",
+        "label": "Fondasi Kuat"
+      }
+    }
+  },
+  "discount": {
+    "title": "Penawaran Terbatas !",
+    "subtitle": "Dapatkan 16% Untuk Program English Master",
+    "claim": "Klaim Sekarang"
+  },
+  "benefits": {
+    "title": "Manfaat Kursus",
+    "subtitle": "Temukan mengapa ribuan siswa memilih kami untuk Program English Master.",
+    "cards": {
+      "dormitory": {
+        "title": "Asrama Area",
+        "description": "Percepat kefasihan dan bangun kepercayaan diri dengan tinggal di lingkungan imersif 24/7."
+      },
+      "expertTutors": {
+        "title": "Pengajar Ahli",
+        "description": "Kuasai materi lengkap dari grammar hingga speaking bersama instruktur berpengalaman."
+      },
+      "realPractice": {
+        "title": "Praktik Nyata",
+        "description": "Terapkan langsung kemampuanmu dalam situasi dunia nyata saat trip gratis ke Bali."
+      },
+      "officialCertification": {
+        "title": "Sertifikasi Resmi",
+        "description": "Tingkatkan nilai CV dengan sertifikat Diknas dan skor TOEFL ITP resmi untuk karir global."
+      }
+    }
+  },
+  "tutors": {
+    "title": "Temui Tutor Kami",
+    "subtitle": "Tutor kami adalah pendidik berpengalaman yang bersemangat mengajar dan membantu siswa mencapai tujuan pembelajaran bahasa mereka."
+  },
+  "pricing": {
+    "title": "Buka Potensi Global Anda",
+    "subtitle": "Program kami dirancang untuk membawa Anda dari pemula menjadi mahir, membuka pintu menuju peluang tak terbatas.",
+    "joinAlumni": "Bergabunglah dengan 100+ alumni",
+    "journey": {
+      "title": "Mulai Perjalanan Kefasihan Anda",
+      "subtitle": "Pilih metode pembayaran yang paling sesuai dan mulailah transformasi Anda hari ini.",
+      "paymentMethod": "Pilih Metode Pembayaran Anda",
+      "fullPayment": "Lunasan",
+      "installment": "Cicilan",
+      "switch": "Anda dapat beralih antara pembayaran penuh atau cicilan bulanan."
+    },
+    "plans": {
+      "englishMaster": {
+        "title": "English Master",
+        "price": "Rp6.900.000,-",
+        "discount": "Diskon 16%",
+        "originalPrice": "Rp7.147.619,-",
+        "duration": "Durasi: 4 Bulan",
+        "description": "Program intensif untuk kuasai grammar, speaking, pronunciation, dan vocabulary, plus praktik di Bali.",
+        "features": [
+          "Tutor Pendamping Asrama",
+          "Tes Penilaian",
+          "4x kelas utama dan 2x kelas camp",
+          "Modul Pembelajaran"
+        ],
+        "bonus": "GRATIS: Jaket + Batik + Kaos + E-Sertifikat ber-SK Diknas",
+        "button": "Daftar English Master"
+      },
+      "englishMasterPlus": {
+        "title": "English Master Plus",
+        "price": "Rp9.900.000,-",
+        "discount": "Diskon 16%",
+        "originalPrice": "Rp10.147.619,-",
+        "duration": "Durasi: 6 Bulan",
+        "description": "Semua dari English Master, plus persiapan intensif dan tes TOEFL ITP resmi untuk karir global.",
+        "features": [
+          "Tutor Pendamping Asrama",
+          "Tes Penilaian",
+          "4x kelas utama dan 2x kelas camp",
+          "Modul Pembelajaran",
+          "Tes Resmi TOEFL ITP"
+        ],
+        "bonus": "GRATIS: Jaket + Batik + Kaos + E-Sertifikat ber-SK Diknas",
+        "button": "Daftar English Master Plus"
+      }
+    }
+  },
   "formLead": {
     "validator": {
       "name": {

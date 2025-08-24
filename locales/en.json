@@ -4,6 +4,148 @@
     "en": "English",
     "label": "EN"
   },
+  "navbar": {
+    "brand": "Language Center",
+    "about": "About",
+    "courses": "Courses",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "heroSection": {
+    "title": "Speak English With <br/> Confidence and Clarity",
+    "titleMobile": "We create a beautiful design with passion for startups & leading brands.",
+    "trusted": "Student Trusted Our <br /> Language Center",
+    "circularText": "* Center * Language",
+    "unlock": "Unlock new opportunities <br /> with personalized English <br /> coaching tailored for you",
+    "getStarted": "Get Started",
+    "aboutUs": "About Us",
+    "onlineCourse": "Online Course",
+    "yearsExperience": "Years Experience",
+    "topMentor": "Top Mentor",
+    "aboutUsDescription": "English Master offers an intensive program that combines classroom theory with immersive practice. Through the English Area Dormitory and practice trips to Bali, we transform your knowledge into fluency and confidence for the world stage.",
+    "skills": {
+      "speaking": "Speaking Skills",
+      "creative": "Creative Learning",
+      "writing": "Writing Skills",
+      "vocabulary": "Vocabulary"
+    }
+  },
+  "magicBento": {
+    "title": "SPEAK ENGLISH CONFIDENTLY. <br/> UNLOCK GLOBAL <br/> OPPORTUNITIES.",
+    "titleMobile": "SPEAK ENGLISH CONFIDENTLY. UNLOCK GLOBAL OPPORTUNITIES.",
+    "description": "Discover programs specifically designed to help you achieve your academic and professional goals in English.",
+    "cards": {
+      "toefl": {
+        "title": "TOEFL Score",
+        "description": "Strategies & practice for TOEFL questions.",
+        "label": "High Score"
+      },
+      "ielts": {
+        "title": "IELTS Score",
+        "description": "Strategies & practice for the IELTS test.",
+        "label": "Target Band 7+"
+      },
+      "toeic": {
+        "title": "TOEIC Pro",
+        "description": "English communication for the workplace.",
+        "label": "Global Career"
+      },
+      "publicSpeaking": {
+        "title": "Public Speaking",
+        "description": "Speak in public with more confidence.",
+        "label": "Confident"
+      },
+      "advancedEnglish": {
+        "title": "Advanced English",
+        "description": "Speak fluently for your career.",
+        "label": "More Fluent"
+      },
+      "grammar": {
+        "title": "Master Grammar",
+        "description": "Deepen your understanding of English grammar.",
+        "label": "Strong Foundation"
+      }
+    }
+  },
+  "discount": {
+    "title": "Limited Time Offer !",
+    "subtitle": "Get 16% For Programs English Master",
+    "claim": "Claim Now"
+  },
+  "benefits": {
+    "title": "Course Benefits",
+    "subtitle": "Discover why thousands of students choose us for the English Master Program.",
+    "cards": {
+      "dormitory": {
+        "title": "Dormitory Area",
+        "description": "Accelerate fluency and build confidence by living in a 24/7 immersive environment."
+      },
+      "expertTutors": {
+        "title": "Expert Tutors",
+        "description": "Master comprehensive material from grammar to speaking with experienced instructors."
+      },
+      "realPractice": {
+        "title": "Real Practice",
+        "description": "Apply your skills directly in real-world situations during a free trip to Bali."
+      },
+      "officialCertification": {
+        "title": "Official Certification",
+        "description": "Enhance your CV with a Ministry of Education certificate and official TOEFL ITP score for a global career."
+      }
+    }
+  },
+  "tutors": {
+    "title": "Meet Our Tutors",
+    "subtitle": "Our tutors are experienced educators who are passionate about teaching and helping students achieve their language learning goals."
+  },
+  "pricing": {
+    "title": "Unlock Your Global Potential",
+    "subtitle": "Our programs are designed to take you from beginner to proficient, opening doors to limitless opportunities.",
+    "joinAlumni": "Join 100+ alumni",
+    "journey": {
+      "title": "Start Your Fluency Journey",
+      "subtitle": "Choose the payment method that suits you best and start your transformation today.",
+      "paymentMethod": "Choose Your Payment Method",
+      "fullPayment": "Full Payment",
+      "installment": "Installment",
+      "switch": "You can switch between full payment or monthly installments."
+    },
+    "plans": {
+      "englishMaster": {
+        "title": "English Master",
+        "price": "Rp6.900.000,-",
+        "discount": "16% off",
+        "originalPrice": "Rp7.147.619,-",
+        "duration": "Duration: 4 Months",
+        "description": "An intensive program to master grammar, speaking, pronunciation, and vocabulary, plus practice in Bali.",
+        "features": [
+          "Dormitory Companion Tutor",
+          "Assessment Test",
+          "4x main class and 2x camp class",
+          "Learning Module"
+        ],
+        "bonus": "FREE: Jacket + Batik + T-shirt + E-Certificate with Ministry of Education Decree",
+        "button": "Register for English Master"
+      },
+      "englishMasterPlus": {
+        "title": "English Master Plus",
+        "price": "Rp9.900.000,-",
+        "discount": "16% off",
+        "originalPrice": "Rp10.147.619,-",
+        "duration": "Duration: 6 Months",
+        "description": "Everything from English Master, plus intensive preparation and an official TOEFL ITP test for a global career.",
+        "features": [
+          "Dormitory Companion Tutor",
+          "Assessment Test",
+          "4x main class and 2x camp class",
+          "Learning Module",
+          "Real Test TOEFL ITP"
+        ],
+        "bonus": "FREE: Jacket + Batik + T-shirt + E-Certificate with Ministry of Education Decree",
+        "button": "Register for English Master Plus"
+      }
+    }
+  },
   "formLead": {
     "validator": {
       "name": {

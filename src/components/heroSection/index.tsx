@@ -9,19 +9,23 @@ import CircularText from '../CircularText/CircularText';
 import Link from 'next/link';
 import { useScrollFadeIn } from '@/libs/animation';
 import { motion } from 'framer-motion';
-export const dataButton = [
-  { title: 'Speaking Skills' },
-  { title: 'Creative Learning' },
-  { title: 'Writing Skills' },
-  { title: 'Vocabulary' },
-];
+import { useTranslations } from 'next-intl';
+
 export const HeroSection = () => {
+  const t = useTranslations('heroSection');
   const [isMobile, setIsMobile] = useState(false);
   const isMobileQuery = useMediaQuery({ query: '(max-width: 767px)' });
 
   useEffect(() => {
     setIsMobile(isMobileQuery);
   }, [isMobileQuery]);
+
+  const dataButton = [
+    { title: t('skills.speaking') },
+    { title: t('skills.creative') },
+    { title: t('skills.writing') },
+    { title: t('skills.vocabulary') },
+  ];
 
   const animationProps = useScrollFadeIn({
     delay: 0.2,
@@ -52,11 +56,7 @@ export const HeroSection = () => {
             className="text-[#212121] font-normal  leading-[32px] lg:leading-0 text-center text-[32px]  lg:text-[58px] md:text-6xl "
             stepDuration={0.7}
             rootMargin="-10px"
-            text={
-              isMobile
-                ? 'We create a beautiful design with passion for startups & leading brands.'
-                : 'Speak English With <br/> Confidence and Clarity'
-            }
+            text={isMobile ? t('titleMobile') : t.raw('title')}
           />
           <div className="w-full flex mt-10  justify-between items-center  relative">
             <div className=" bg-[#9242FD] justify-between h-[200px] py-4 flex flex-col pl-6  pr-20 rounded-4xl relative ">
@@ -65,9 +65,10 @@ export const HeroSection = () => {
                 <CountUp to={18} />
                 <span>K</span>
               </div>
-              <p className="text-white font-bricolage text-[18px] font-normal">
-                Student Truested Our <br /> Language Center
-              </p>
+              <p
+                className="text-white font-bricolage text-[18px] font-normal"
+                dangerouslySetInnerHTML={{ __html: t.raw('trusted') }}
+              ></p>
               {dataButton.map((item, index) => (
                 <button
                   key={index}
@@ -88,18 +89,18 @@ export const HeroSection = () => {
               <div className="w-[160px] bg-primary   rounded-full h-[160px] relative">
                 <CircularText
                   className="w-full font-urbanist text-accent font-semibold h-full absolute"
-                  text=" * Center * Language"
+                  text={t('circularText')}
                 />
               </div>
-              <p className="text-[#212121] text-xl font-semibold ">
-                Unlock new opportunities <br /> with personalized English <br />
-                coaching tailored for you
-              </p>
+              <p
+                className="text-[#212121] text-xl font-semibold "
+                dangerouslySetInnerHTML={{ __html: t.raw('unlock') }}
+              ></p>
               <Link
                 href="/your-link"
                 className="text-white w-full flex justify-center items-center bg-primary rounded-full py-3 px-5 font-semibold"
               >
-                Get Started
+                {t('getStarted')}
               </Link>
             </div>
           </div>
@@ -111,35 +112,30 @@ export const HeroSection = () => {
       >
         <div className="grid grid-cols-12 w-full h-full  flex-col pb-20 justify-end items-end">
           <div className="col-span-5  text-white flex flex-col gap-5 ">
-            <h1 className="text-[55px] font-bricolage">About Us</h1>
+            <h1 className="text-[55px] font-bricolage">{t('aboutUs')}</h1>
             <div className="flex flex-row w-full justify-start gap-5 text-3xl font-bold">
               <div className="flex flex-col gap-2 cursor-target">
                 <span className="text-[48px] text-primary font-bricolage font-normal">
                   +<CountUp to={50} />
                 </span>
-                <p className="text-base font-normal">Online Course</p>
+                <p className="text-base font-normal">{t('onlineCourse')}</p>
               </div>
               <div className="flex flex-col gap-2 cursor-target">
                 <span className="text-[48px] text-primary font-bricolage font-normal">
                   <CountUp to={120} />
                 </span>
-                <p className="text-base font-normal">Years Experience</p>
+                <p className="text-base font-normal">{t('yearsExperience')}</p>
               </div>
               <div className="flex flex-col gap-2 cursor-target">
                 <span className="text-[48px] text-primary font-bricolage font-normal">
                   <CountUp to={15} />+
                 </span>
-                <p className="text-base font-normal">Top Mentor</p>
+                <p className="text-base font-normal">{t('topMentor')}</p>
               </div>
             </div>
           </div>
           <div className="col-span-7 flex justify-center items-center text-[24px]  font-urbanist text-white ">
-            <p>
-              English Master menawarkan program intensif yang memadukan teori
-              kelas dengan praktik imersif. Melalui Asrama English Area dan trip
-              praktik ke Bali, kami mengubah pengetahuan Anda menjadi kefasihan
-              dan kepercayaan diri untuk panggung dunia.
-            </p>
+            <p>{t('aboutUsDescription')}</p>
           </div>
         </div>
       </motion.div>

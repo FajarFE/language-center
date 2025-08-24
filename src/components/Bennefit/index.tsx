@@ -1,42 +1,37 @@
-// Bennefits.jsx (Kode yang sudah diperbaiki)
-
+'use client';
+import { useTranslations } from 'next-intl';
 import { CardBennefit } from './cardBennefit';
 
-export const dataBennefit = [
-  {
-    title: 'Asrama Area',
-    description:
-      'Percepat kefasihan dan bangun kepercayaan diri dengan tinggal di lingkungan imersif 24/7.',
-  },
-  {
-    title: 'Pengajar Ahli',
-    description:
-      'Kuasai materi lengkap dari grammar hingga speaking bersama instruktur berpengalaman.',
-  },
-  {
-    title: 'Praktik Nyata',
-    description:
-      'Terapkan langsung kemampuanmu dalam situasi dunia nyata saat trip gratis ke Bali.',
-  },
-  {
-    title: 'Sertifikasi Resmi',
-    description:
-      'Tingkatkan nilai CV dengan sertifikat Diknas dan skor TOEFL ITP resmi untuk karir global.',
-  },
-];
-
 export const Bennefits = () => {
+  const t = useTranslations('benefits');
+
+  const dataBennefit = [
+    {
+      title: t('cards.dormitory.title'),
+      description: t('cards.dormitory.description'),
+    },
+    {
+      title: t('cards.expertTutors.title'),
+      description: t('cards.expertTutors.description'),
+    },
+    {
+      title: t('cards.realPractice.title'),
+      description: t('cards.realPractice.description'),
+    },
+    {
+      title: t('cards.officialCertification.title'),
+      description: t('cards.officialCertification.description'),
+    },
+  ];
+
   return (
     <section className="w-6xl mx-auto container max-w-[1220px] h-[700px] mt-[80px] relative flex items-center justify-center">
       <div className="relative w-full h-full">
         <div className="absolute top-1/2 cursor-target left-1/2 w-[320px] -translate-x-1/2 -translate-y-1/2 text-center z-10  max-w-2xl">
           <h1 className="text-black text-[58px] leading-14 font-bricolage px-5">
-            Course Benefits
+            {t('title')}
           </h1>
-          <p className="text-gray-600">
-            Discover why thousands of students choose us for the English Master
-            Program.
-          </p>
+          <p className="text-gray-600">{t('subtitle')}</p>
         </div>
 
         {dataBennefit.map((item, index) => {
