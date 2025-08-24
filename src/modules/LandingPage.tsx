@@ -3,6 +3,7 @@ import { Tutor } from '@/components/ChromaGrid';
 import { Discount } from '@/components/Discount';
 import { HeroSection } from '@/components/heroSection';
 import MagicBento from '@/components/MagicBento/MagicBento';
+import Pricing from '@/components/Pricing';
 
 export const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ export const LandingPage = () => {
       <MagicBento />
       <Discount />
       <Bennefits />
+      <Pricing />
       <Tutor />
     </>
   );
